@@ -1,0 +1,5 @@
+limit_submissions: -1
+required_files:
+  - dlist.h
+  - call.cpp
+  - calc.cpp

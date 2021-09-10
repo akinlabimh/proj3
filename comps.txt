@@ -1,0 +1,2 @@
+g++ -O3 submission/calc.cpp -o ./source/tests/Calc_test/calc_ex
+g++ -O3 submission/call.cpp -o ./source/tests/Call_test/call_ex
