@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#  compile test:
+#  test-main.o : this is compiled in bootstrap.init and can be linked with all catch tests
+#  -I ../      : indicates that there are files in the parent directory that we '#include' in our test (these are the
+#                files that were submitted by the student).
+#  -o test.exe : name the compiled executable 'test.exe'
+g++ -O4 -std=c++11 test03.cpp ../test-main.o -I ../ -o text.exe
+
+
+#  execute the test
+./calc_ex < test.in1 > student.output1
+./calc_ex < test.in2 > student.output2
+./calc_ex < test.in3 > student.output3
+./text.exe
